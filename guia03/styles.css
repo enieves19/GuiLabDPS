@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap");
+
+body {
+  /* You can add global styles to this file, and also import other style files */
+  background: #b92b27; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Reset  */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Fonts */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+button,
+li,
+input,
+textarea {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+/* Styles */
+.navbar {
+  background: #007aff;
+  padding: 1rem;
+  color: white;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 2rem 3rem;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.row > div {
+  width: 100%;
+}
+
+.row > div:first-child {
+  margin-right: 2rem;
+}
+
+.list-group,
+.card {
+  background: white;
+  border-radius: 4px;
+}
+
+.list-group {
+  margin-bottom: 1rem;
+}
+
+.list-group-item {
+  padding: 1rem 2rem;
+  display: flex;
+  border-bottom: 1px solid #ececec;
+  cursor: pointer;
+  transition: 0.2s all ease;
+  padding: 1rem 1.25rem;
+}
+
+.list-group-item:first-child {
+  border-radius: 4px 4px 0 0;
+}
+
+.list-group-item:last-child {
+  border-radius: 0 0 4px 4px;
+}
+
+.list-group-item:hover,
+.list-group-item.active {
+  background: #007aff;
+  color: white;
+}
+
+.list-group-item:hover .badge,
+.list-group-item.active .badge {
+  background: white;
+  color: #0174f1;
+}
+
+.list-group-item:last-of-type {
+  border-bottom: none;
+}
+
+.badge {
+  background: #0174f1;
+  color: white;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-right: 0.6rem;
+}
+
+.card {
+  padding: 1.25rem;
+}
+
+.card-title h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-group input {
+  width: 100%;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  padding: 0.6rem;
+}
+
+.btn {
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  transition: 0.2s all ease;
+  margin-right: 0.8rem !important;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn.btn-primary {
+  background-color: #007cfe;
+}
+
+.btn.btn-danger {
+  background-color: #de3446;
+}
